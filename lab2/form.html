@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма регистрации пользователя</title>
+</head>
+<body>
+    <h1>Форма регистрации пользователя</h1>
+    <form method="post" action="/submit">
+        <!-- Поле E-mail -->
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="email" placeholder="Введите e-mail" required><br><br>
+
+        <!-- Поле Пароль -->
+        <label for="password">Пароль:</label><br>
+        <input type="password" id="password" name="password" placeholder="Введите пароль" required><br><br>
+
+        <!-- Поле Пол -->
+        <label>Пол:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Мужчина</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Женщина</label><br><br>
+
+        <!-- Поле Год рождения -->
+        <label for="birthyear">Год рождения:</label><br>
+        <input type="number" id="birthyear" name="birthyear" min="1900" max="2023" placeholder="1981"><br><br>
+
+        <!-- Поле Я знаю -->
+        <label>Я знаю:</label><br>
+        <input type="checkbox" id="russian" name="language" value="russian" checked disabled>
+        <label for="russian">Русский</label><br>
+        <input type="checkbox" id="spanish" name="language" value="spanish">
+        <label for="spanish">Испанский</label><br>
+        <input type="checkbox" id="german" name="language" value="german">
+        <label for="german">Немецкий</label><br>
+        <input type="checkbox" id="english" name="language" value="english">
+        <label for="english">Английский</label><br>
+        <input type="checkbox" id="chinese" name="language" value="chinese">
+        <label for="chinese">Китайский</label><br><br>
+
+        <!-- Поле Обо мне -->
+        <label for="about">Напишите коротко о себе:</label><br>
+        <textarea id="about" name="about" placeholder="Обо мне"></textarea><br><br>
+
+        <!-- Кнопка отправки формы -->
+        <input type="submit" value="Готово">
+        <!-- Кнопка очистить форму -->
+        <input type="reset" value="Очистить">
+    </form>
+</body>
+</html>
