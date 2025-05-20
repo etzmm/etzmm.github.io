@@ -67,6 +67,7 @@ function ucFirst(str) {
     return str[0].toUpperCase() + str.slice(1);
 }
 
+import {fib} from './lab2.js';
 /**
  * Возвращает массив чисел Фибоначчи до n-го (не включая его).
  * @param {number} n - Количество чисел Фибоначчи.
@@ -80,19 +81,6 @@ export function fibs(n) {
     return result;
 }
 
-/**
- * Возвращает n-е число Фибоначчи.
- * @param {number} n - Порядковый номер числа Фибоначчи.
- * @returns {bigint} n-е число Фибоначчи.
- */
-function fib(n) {
-    if (n === 0) return 0n;
-    let a = 0n, b = 1n;
-    for (let i = 2; i <= n; i++) {
-        [a, b] = [b, a + b];
-    }
-    return b;
-}
 
 /**
  * Возвращает новый массив, отсортированный по убыванию.
