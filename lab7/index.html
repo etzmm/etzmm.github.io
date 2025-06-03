@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт-визитка</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка  -->
+    <header>
+        <!-- Навигационное меню -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">YO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Обо мне</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Услуги</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Герой-секция (нижняя часть шапки) -->
+        <section class="hero-section text-center">
+            <div class="container">
+                <h1 class="display-4">Добро пожаловать на мой сайт</h1>
+                <p class="lead">Профессиональные услуги с индивидуальным подходом</p>
+                <a href="#contact" class="btn btn-primary btn-lg mt-3">Связаться со мной</a>
+            </div>
+        </section>
+    </header>
+
+    <!-- Основное содержимое -->
+    <main class="container my-5">
+        <!-- Блок "Обо мне" -->
+        <section id="about" class="mb-5">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="mb-4">Обо мне</h2>
+                    <p>Привет! Меня зовут Андрей, и я студент ОГУ имени И.С.Тургенева. Учусь на факультете прикладной информатики вот уже 2й год.</p>
+                    <p>Специализируюсь на работе с разнообразными языками программирования и разработке сайтов, в свободное время занимаюсь спортом и частенько провожу время в онлайн играх. Всегда буду рад помочь!</p>
+                    <a href="#services" class="btn btn-outline-primary">Мои услуги</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="images.jpg" alt="Мое фото" class="img-fluid rounded">
+                </div>
+            </div>
+        </section>
+        
+        <!-- Блок "Услуги" -->
+        <section id="services" class="mb-5">
+            <h2 class="text-center mb-5">Мои услуги</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-code-slash fs-1 text-primary"></i>
+                            <h3 class="card-title">Веб-разработка</h3>
+                            <p class="card-text">Создание сайтов любой сложности с нуля или доработка существующих.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-phone fs-1 text-primary"></i>
+                            <h3 class="card-title">Адаптивный дизайн</h3>
+                            <p class="card-text">Сайты, которые отлично выглядят на любых устройствах.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-search fs-1 text-primary"></i>
+                            <h3 class="card-title">SEO-оптимизация</h3>
+                            <p class="card-text">Повышение видимости вашего сайта в поисковых системах.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Блок "Контакты" -->
+        <section id="contact" class="mb-5">
+            <h2 class="text-center mb-5">Свяжитесь со мной</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Ваше имя</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Сообщение</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Отправить</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Контактная информация</h3>
+                            <p><i class="bi bi-geo-alt-fill"></i> Москва, ул. Пушкина, д.Колотушкина 1</p>
+                            <p><i class="bi bi-telephone-fill"></i> 8 800 555 3535</p>
+                            <p><i class="bi bi-envelope-fill"></i> info@mail.ru.com</p>
+                            <hr>
+                            <h4>Социальные сети</h4>
+                            <div class="social-links">
+                                <a href="#" class="me-2"><i class="bi bi-facebook fs-4"></i></a>
+                                <a href="#" class="me-2"><i class="bi bi-twitter fs-4"></i></a>
+                                <a href="#" class="me-2"><i class="bi bi-instagram fs-4"></i></a>
+                                <a href="#" class="me-2"><i class="bi bi-linkedin fs-4"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2025 Мой сайт-визитка. Все права защищены.</p>
+            <p>
+                <a href="#" class="text-white me-3">Политика конфиденциальности</a>
+                <a href="#" class="text-white">Условия использования</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Подключение Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
